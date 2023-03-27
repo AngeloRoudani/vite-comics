@@ -69,10 +69,7 @@ header {
                 height: 4px;
                 background-color: $color-primary;
                 display: none;
-            }
-
-            li:hover .border {
-                display: block;
+                margin-top: 31px;
             }
 
             a {
@@ -82,10 +79,11 @@ header {
                 display: inline-block;
             }
             a:hover {
-            color: $color-primary;
-            }
-        
-            
+                color: $color-primary;
+            } 
+        }
+        li:hover .border {
+            display: block;
         }
         
     }
