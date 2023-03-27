@@ -1,6 +1,6 @@
-@use '../style/partials/variables' as *;
+@use './variables' as *;
 
-.btn {
+.mybtn {
     padding: .5rem;
     border: solid 2px $color-primary;
     color: $text-secondary;

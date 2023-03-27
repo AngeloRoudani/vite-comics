@@ -6,7 +6,8 @@
             </div>
             <div class="link_list">
                 <ul>
-                    <li v-for="element in links"><a href="#">{{element}}</a></li>
+                    <li v-for="element in links"><a href="#">{{element}}</a><div class="border"></div></li>
+                    
                 </ul>
             </div>
         </div>
@@ -63,8 +64,15 @@ header {
             padding: 0 1rem ;
             display: inline-block;
 
-            li:hover {
-                border-bottom: $color-primary;
+            .border {
+                width: 100%;
+                height: 4px;
+                background-color: $color-primary;
+                display: none;
+            }
+
+            li:hover .border {
+                display: block;
             }
 
             a {
