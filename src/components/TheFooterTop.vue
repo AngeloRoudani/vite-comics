@@ -42,6 +42,8 @@
 </script>
 
 <style scoped lang="scss">
+@use '../style/partials/variables' as *;
+@use '../style/partials/mixins.scss';
     .foot_bg {
         height: 40vh;
         background-image: url('../assets/footer-bg.jpg');
@@ -49,12 +51,8 @@
     }
 
     .container {
-        width: 1170px;
         height: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.flex-center;
     }
 
     .foot_links {
@@ -68,14 +66,14 @@
     }
 
     h3 {
-        color: #fff;
+        color: $text-secondary;
     }
 
     li {
-        color: #959595;
+        color: $color-text;
         font-size: 10px;
         li:hover {
-            color: #fff;
+            color: $text-secondary;
         }
     }
 

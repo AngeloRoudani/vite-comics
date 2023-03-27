@@ -19,12 +19,14 @@
 </script>
 
 <style scoped lang="scss">
+
+@use '../style/partials/variables' as *;
     .top {
         height: 100px;
         background-color: #1c1c1c;
         h1 {
             width: 1170px;
-            color: #fff;
+            color: $text-secondary;
         }
     }
     .container {
@@ -34,6 +36,6 @@
 
     .bottom {
         height: 120px;
-        background-color: #0282f9;
+        background-color: $color-primary;
     }
 </style>

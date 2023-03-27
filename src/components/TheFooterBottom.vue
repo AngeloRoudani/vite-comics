@@ -29,16 +29,16 @@
 </script>
 
 <style scoped lang="scss">
+@use '../style/partials/variables' as *;
+@use '../style/partials/mixins.scss';
 
     .bottom {
-        background-color: #303030;
+        background-color: $color-third;
     }
     .container {
         width: 1170px;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.flex-center;
         padding: 2rem 0;
 
     }
@@ -49,13 +49,13 @@
 
     }
     span {
-        color: #0282f9;
+        color: $color-primary;
         font-weight: bold;
         padding-right: 1.5rem;
     }
 
     i {
-        color: #959595;
+        color: $color-text;
         font-size: 1.5rem;
         padding-right: .5rem;
     }
@@ -72,9 +72,9 @@
 
     .btn {
         padding: .5rem;
-        border: solid 2px #0282f9;
-        color: white;
-        background-color: #303030;
+        border: solid 2px $color-primary;
+        color: $text-secondary;
+        background-color: $color-third;
         text-transform: uppercase;
         font-weight: bold;
 

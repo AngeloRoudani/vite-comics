@@ -30,17 +30,16 @@
 
 <style scoped lang="scss">
 
+@use '../style/partials/mixins.scss';
+@use '../style/partials/variables' as *;
+
 header {
-    background-color: white;
+    background-color: $text-secondary;
 }
 
 .container {
-    width: 1170px;
     height: 80px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include mixins.flex-center;
 }
 
 .image_logo img {
@@ -49,8 +48,9 @@ header {
 
 .link_list {
     height: 100%;
-    display: flex;
-    align-items: center;
+    @include mixins.flex-center;
+    margin: 0;
+    width: auto;
     ul {
         height: 100%;
         list-style: none;
@@ -64,18 +64,17 @@ header {
             display: inline-block;
 
             li:hover {
-                border-bottom: solid 3px #0282f9;
+                border-bottom: solid 3px $color-primary;
             }
 
             a {
                 text-decoration: none;
                 color: black;
-                vertical-align: center;
                 padding-top: 30px;
                 display: inline-block;
             }
             a:hover {
-            color: #0282f9;
+            color: $color-primary;
             }
         
             
