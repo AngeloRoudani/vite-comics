@@ -7,6 +7,7 @@
     </main>
     <footer>
         <TheFooterTop/>
+        <TheFooterBottom/>
     </footer>
 
 </template>
@@ -16,12 +17,14 @@
     import TheHeader from './components/TheHeader.vue';
     import TheMain from './components/TheMain.vue'
     import TheFooterTop from './components/TheFooterTop.vue';
+    import TheFooterBottom from './components/TheFooterBottom.vue';
 
     export default {
         components : {
             TheHeader,
             TheFooterTop,
-            TheMain
+            TheMain,
+            TheFooterBottom
         }
     }
 </script>

@@ -1,6 +1,9 @@
 <template>
     <section class="top">
-        <h1 class="title">Content goes here</h1>
+        <div class="container">
+            <h1 class="title">Content goes here</h1>
+        </div>
+        
     </section>
     <section class="bottom">
         <div class="bottom_bg">
@@ -19,6 +22,14 @@
     .top {
         height: 100px;
         background-color: #1c1c1c;
+        h1 {
+            width: 1170px;
+            color: #fff;
+        }
+    }
+    .container {
+        width: 1170px;
+        margin: auto;
     }
 
     .bottom {

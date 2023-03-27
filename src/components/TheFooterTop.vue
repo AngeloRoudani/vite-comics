@@ -6,10 +6,6 @@
                     <h3>DC COMICS</h3>
                     <li v-for="element in comics">{{element}}</li>
                 </ul>
-                <ul class="second">
-                    <h3>SHOP</h3>
-                    <li v-for="element in shop">{{ element }}</li>
-                </ul>
                 <ul class="third">
                     <h3>DC</h3>
                     <li v-for="element in dc">{{ element }}</li>
@@ -17,6 +13,10 @@
                 <ul class="fourth">
                     <h3>SITES</h3>
                     <li v-for="element in sites">{{ element }}</li>
+                </ul>
+                <ul class="second">
+                    <h3>SHOP</h3>
+                    <li v-for="element in shop">{{ element }}</li>
                 </ul>
             </div>
             
@@ -62,6 +62,7 @@
         display: flex;
         flex-wrap: wrap;
         ul {
+            width: calc(100% / 3);
             list-style: none;
         }
     }
@@ -73,6 +74,9 @@
     li {
         color: #959595;
         font-size: 10px;
+        li:hover {
+            color: #fff;
+        }
     }
 
     .foot_logo {
