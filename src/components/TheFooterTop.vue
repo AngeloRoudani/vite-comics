@@ -3,19 +3,19 @@
         <div class="container">
             <div class="foot_links">
                 <ul class="first">
-                    <h3>DC COMICS</h3>
+                    <h5>DC COMICS</h5>
                     <li v-for="element in comics">{{element}}</li>
                 </ul>
                 <ul class="third">
-                    <h3>DC</h3>
+                    <h5>DC</h5>
                     <li v-for="element in dc">{{ element }}</li>
                 </ul>
                 <ul class="fourth">
-                    <h3>SITES</h3>
+                    <h5>SITES</h5>
                     <li v-for="element in sites">{{ element }}</li>
                 </ul>
                 <ul class="second">
-                    <h3>SHOP</h3>
+                    <h5>SHOP</h5>
                     <li v-for="element in shop">{{ element }}</li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
 @use '../style/partials/variables' as *;
 @use '../style/partials/mixins.scss';
     .foot_bg {
-        height: 40vh;
+        height: 300px;
         background-image: url('../assets/footer-bg.jpg');
         display: flex;
     }
@@ -65,13 +65,15 @@
         }
     }
 
-    h3 {
+    h5 {
         color: $text-secondary;
+
     }
 
     li {
         color: $color-text;
         font-size: 10px;
+        padding-top: .3rem;
         li:hover {
             color: $text-secondary;
         }
