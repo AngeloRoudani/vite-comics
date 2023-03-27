@@ -30,5 +30,5 @@
 </script>
 
 <style scoped lang="scss">
-
+    @use './style/general.scss';
 </style>
