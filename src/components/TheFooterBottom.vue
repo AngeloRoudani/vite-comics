@@ -1,7 +1,7 @@
 <template>
     <div class="bottom">
         <div class="container">
-            <button class="btn">sign-up now</button>
+            <button class="mybtn">sign-up now</button>
             <div class="icons">
                 <span>FOLLOW US</span>
                 <ul>
@@ -31,6 +31,7 @@
 <style scoped lang="scss">
 @use '../style/partials/variables' as *;
 @use '../style/partials/mixins.scss';
+@use '../style/partials/mybtn' as *;
 
     .bottom {
         background-color: $color-third;
@@ -68,15 +69,5 @@
         li {
             display: inline-block;
         }
-    }
-
-    .btn {
-        padding: .5rem;
-        border: solid 2px $color-primary;
-        color: $text-secondary;
-        background-color: $color-third;
-        text-transform: uppercase;
-        font-weight: bold;
-
     }
 </style>

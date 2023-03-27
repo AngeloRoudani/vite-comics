@@ -59,12 +59,12 @@ header {
         font-weight: bold;
         
         li {
-            height: 100%;
+            height: 90%;
             padding: 0 1rem ;
             display: inline-block;
 
             li:hover {
-                border-bottom: solid 3px $color-primary;
+                border-bottom: $color-primary;
             }
 
             a {

@@ -1,0 +1,11 @@
+@use '../style/partials/variables' as *;
+
+.btn {
+    padding: .5rem;
+    border: solid 2px $color-primary;
+    color: $text-secondary;
+    background-color: $color-third;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
