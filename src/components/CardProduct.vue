@@ -19,15 +19,25 @@
 </script>
 
 <style scoped lang="scss">
-
 .container {
-    width: calc((100% / 6) - 1rem);
-    
+    width: 100%;
 }
 
 img {
     width: 100%;
+    height: 200px;
+    object-fit: fill;
+    
 }
+
+.name {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 1rem;
+    font-size: 14px;
+}
+
 
 
 </style>

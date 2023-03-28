@@ -38,14 +38,23 @@
 @use '../style/partials/variables' as *;
     .top {
         background-color: #1c1c1c;
-        h1 {
-            width: 1170px;
-            color: $text-secondary;
-        }
+        
     }
     .container {
         width: 1170px;
         margin: auto;
+    }
+
+    .card_list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc((100% / 6) - 1rem);
+        margin: 2rem 0.5rem;
+    
     }
 
     .bottom {

@@ -109,6 +109,6 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
     @use './style/general.scss';
 </style>
