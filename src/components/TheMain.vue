@@ -1,7 +1,6 @@
 <template>
     <section class="top">
         <div class="container">
-            <h1 class="title">Content goes here</h1>
             <div class="card_list">
                 <div v-for="(element, index) in Cards" class="card" :key="index">
                     <CardProduct :Photo="element.thumb" :NameComic="element.series" />

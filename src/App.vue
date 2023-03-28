@@ -3,6 +3,7 @@
 
         <TheHeader/>
     <main>
+        <Jumbotron/>
         <TheMain :Cards="product"/>
     </main>
     <footer>
@@ -18,6 +19,7 @@
     import TheMain from './components/TheMain.vue'
     import TheFooterTop from './components/TheFooterTop.vue';
     import TheFooterBottom from './components/TheFooterBottom.vue';
+    import Jumbotron from './components/Jumbotron.vue';
 
     export default {
 
@@ -108,7 +110,8 @@
             TheHeader,
             TheFooterTop,
             TheMain,
-            TheFooterBottom
+            TheFooterBottom,
+            Jumbotron
         }
     }
 </script>
