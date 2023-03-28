@@ -6,6 +6,7 @@
                     <CardProduct :Photo="element.thumb" :NameComic="element.series" />
                 </div>
             </div>
+            <button class="mybtn2">Load More</button>
         </div>
         
     </section>
@@ -70,6 +71,7 @@
 <style scoped lang="scss">
 @use '../style/partials/mixins.scss';
 @use '../style/partials/variables' as *;
+@use '../style/partials/mybtn.scss';
     .top {
         background-color: #1c1c1c;
         
@@ -77,6 +79,7 @@
     .container {
         width: 1170px;
         margin: auto;
+        text-align: center;
     }
 
     .card_list {
@@ -117,5 +120,9 @@
         text-transform: uppercase;
         font-weight: bold;
         padding-left: 0.5rem;
+    }
+
+    .mybtn2 {
+        margin: 1rem auto;
     }
 </style>
