@@ -4,7 +4,7 @@
         <TheHeader/>
     <main>
         <Jumbotron/>
-        <TheMain :Cards="product"/>
+        <TheMain :Cards="product" :Things="utilities"/>
     </main>
     <footer>
         <TheFooterTop :Books="comics" :Buy="shop" :House="dc" :Web="sites"/>
@@ -102,7 +102,30 @@
                 comics: ['Characters','Comics', 'Movies', 'TV', 'Games', 'Videos','News'],
                 shop: ['Shop DC', 'Shop DC Collectibles'],
                 dc:[ 'Terms Of Use','Privacy policy', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certicates', 'Ratings', 'Shop Help', 'Contact us'],
-                sites: ['DC', 'MAD Magazine','DC Kids', 'DC Universe', 'DC Power Visa']
+                sites: ['DC', 'MAD Magazine','DC Kids', 'DC Universe', 'DC Power Visa'],
+                utilities: [ 
+                        {
+                            address: 'buy-comics-digital-comics.png',
+                            type: 'Digital Comics'
+                        },
+                        {
+                            address: 'buy-comics-merchandise.png',
+                            type: 'Dc merchandise'
+                        },
+                        {
+                            address: 'buy-comics-shop-locator.png',
+                            type: 'subscription'
+                        },
+                        {
+                            address: 'buy-comics-subscriptions.png',
+                            type: 'comic shop locator'
+                        },
+                        {
+                            address: 'buy-dc-power-visa.svg',
+                            type: 'dc power visa'
+                        },
+                    
+                        ]
             }
         },
 
