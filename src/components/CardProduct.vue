@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="wrapper">
         <img :src="Photo" class="photo">
         <div class="name">{{ NameComic }}</div>
     </div>
@@ -19,17 +19,16 @@
 </script>
 
 <style scoped lang="scss">
-.container {
+.wrapper {
     width: 100%;
 }
 
 img {
-    width: 100%;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: fill;
     
 }
-
 .name {
     color: white;
     text-transform: uppercase;

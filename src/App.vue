@@ -6,7 +6,7 @@
         <TheMain :Cards="product"/>
     </main>
     <footer>
-        <TheFooterTop/>
+        <TheFooterTop :Books="comics" :Buy="shop" :House="dc" :Web="sites"/>
         <TheFooterBottom/>
     </footer>
 
@@ -96,7 +96,11 @@
                                 "series": "Catwoman",
                                 "type": "graphic novel"
                             }
-                            ]
+                            ],
+                comics: ['Characters','Comics', 'Movies', 'TV', 'Games', 'Videos','News'],
+                shop: ['Shop DC', 'Shop DC Collectibles'],
+                dc:[ 'Terms Of Use','Privacy policy', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certicates', 'Ratings', 'Shop Help', 'Contact us'],
+                sites: ['DC', 'MAD Magazine','DC Kids', 'DC Universe', 'DC Power Visa']
             }
         },
 

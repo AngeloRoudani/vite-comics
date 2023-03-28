@@ -4,19 +4,19 @@
             <div class="foot_links">
                 <ul class="first">
                     <h5>DC COMICS</h5>
-                    <li v-for="element in comics">{{element}}</li>
+                    <li v-for="(element, index) in Books" :key="index">{{element}}</li>
                 </ul>
                 <ul class="third">
                     <h5>DC</h5>
-                    <li v-for="element in dc">{{ element }}</li>
+                    <li v-for="(element, index) in House" :key="index">{{ element }}</li>
                 </ul>
                 <ul class="fourth">
                     <h5>SITES</h5>
-                    <li v-for="element in sites">{{ element }}</li>
+                    <li v-for="(element, index) in Web" :key="index">{{ element }}</li>
                 </ul>
                 <ul class="second">
                     <h5>SHOP</h5>
-                    <li v-for="element in shop">{{ element }}</li>
+                    <li v-for="(element, index) in Buy" :key="index">{{ element }}</li>
                 </ul>
             </div>
             
@@ -30,13 +30,11 @@
 <script>
     export default {
         name: 'TheFooterTop',
-        data () {
-            return {
-            comics: ['Characters','Comics', 'Movies', 'TV', 'Games', 'Videos','News'],
-            shop: ['Shop DC', 'Shop DC Collectibles'],
-            dc:[ 'Terms Of Use','Privacy policy', 'Ad Choices', 'Advertising', 'Jobs', 'Subscriptions', 'Talent Workshops', 'CPSC Certicates', 'Ratings', 'Shop Help', 'Contact us'],
-            sites: ['DC', 'MAD Magazine','DC Kids', 'DC Universe', 'DC Power Visa']
-            }
+        props: {
+            Books: Array,
+            Buy: Array,
+            House: Array,
+            Web: Array
         }
     }
 </script>
